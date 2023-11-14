@@ -25,12 +25,12 @@ console.log(divide2)
         {nome: 'guilherme', idade: 23}
  ]
 
-var maisvelho = pessoas.filter(function(pessoa){
+var membro_mais_velho = pessoas.filter(function(pessoa){
 
     return pessoa.idade > 22; /*true or false*/ 
 })
 
-console.log(maisvelho);
+console.log(membro_mais_velho);
 
 /*Encontrar uma pessoa dentro da lista usando find */
 
@@ -40,3 +40,15 @@ var romulo = pessoas.find(function(pessoa){
 });
 
 console.log(romulo);
+
+var pessoas_maiores_20 = pessoas.every(function(pessoa){
+
+    return pessoa.idade > 20; /*booleano*/
+})
+
+if (pessoas_maiores_20){
+    console.log("Todos são maiores que 20 anos")
+}else{
+    console.log("Nem todos são maiores que 20 anos")
+
+}
