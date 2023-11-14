@@ -95,3 +95,12 @@ if (membrosDnaCenter.length > 0) {
 } else {
     console.log("Ninguém é membro do DNACenter");
 }
+
+/*Usar reduce para somar todos os numeros da lista*/
+
+var soma = 0
+soma = numeros.reduce(function(soma,numero){
+    return soma+numero
+})
+
+console.log(soma)
