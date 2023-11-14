@@ -106,9 +106,9 @@ console.log(soma);
 
 /*Usar reduce pra somar os nomes */
 
-
 var soma_nome = pessoas.reduce(function(soma2,pessoa){
      soma2.push(pessoa.nome);
      return soma2
-},[]);
+},[]); /*isso no fim é pra passar vazio [] como valor inicial*/
 console.log(soma_nome);
+
