@@ -16,5 +16,27 @@ return numero/2
 });
 
 console.log(divide2)
+ 
+/* usando filter para filtrar*/ 
+ var pessoas = [
+        {nome: 'vi', idade: 20},
+        {nome: 'pedro', idade: 19},
+        {nome: 'romulo', idade: 22},
+        {nome: 'guilherme', idade: 23}
+ ]
 
+var maisvelho = pessoas.filter(function(pessoa){
 
+    return pessoa.idade > 22; /*true or false*/ 
+})
+
+console.log(maisvelho);
+
+/*Encontrar uma pessoa dentro da lista usando find */
+
+var romulo = pessoas.find(function(pessoa){
+
+    return pessoa.nome == 'romulo'
+});
+
+console.log(romulo);
