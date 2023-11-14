@@ -30,7 +30,11 @@ var membro_mais_velho = pessoas.filter(function(pessoa){
     return pessoa.idade > 22; /*true or false*/ 
 })
 
-console.log(membro_mais_velho);
+console.log("Pessoas que tem mais de 22 anos:")
+membro_mais_velho.forEach(function(pessoa){
+
+    console.log(pessoa.nome);
+})
 
 /*Encontrar uma pessoa dentro da lista usando find */
 
@@ -41,6 +45,7 @@ var romulo = pessoas.find(function(pessoa){
 
 console.log(romulo);
 
+/*Verificar se todos dentro da lista são/possuem algo usando every */
 var pessoas_maiores_20 = pessoas.every(function(pessoa){
 
     return pessoa.idade > 20; /*booleano*/
@@ -50,5 +55,43 @@ if (pessoas_maiores_20){
     console.log("Todos são maiores que 20 anos")
 }else{
     console.log("Nem todos são maiores que 20 anos")
+}
 
+/*Usando some */
+
+var membros =[
+    {nome: 'vi', empresa: "DnaCenter" },
+    {nome: 'pedro', empresa: "tiktok"},
+    {nome: 'romulo', empresa: "nubank"},
+    {nome: 'guilherme', empresa: "google"}
+]
+
+var membrosDnaCenter  = membros.some(function(membro){
+
+    return membro.empresa == "DnaCenter"
+
+})
+
+if (membrosDnaCenter ){
+    console.log("Algum é membro do DNACenter" )
+}else{
+    console.log("Ninguém é membro do DNACenter")
+}
+
+/* melhorar o código de cima usando filter, para colocar quem é membro  e usar forEach pq só com filter n ta imprimindo*/
+
+
+var membrosDnaCenter = membros.filter(function(membro){
+
+    return membro.empresa == "DnaCenter"
+
+})
+
+if (membrosDnaCenter.length > 0) {
+    console.log("Membros do DNACenter:");
+    membrosDnaCenter.forEach(function (membro) {
+        console.log(membro.nome);
+    });
+} else {
+    console.log("Ninguém é membro do DNACenter");
 }
