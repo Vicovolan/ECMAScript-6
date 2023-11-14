@@ -98,9 +98,17 @@ if (membrosDnaCenter.length > 0) {
 
 /*Usar reduce para somar todos os numeros da lista*/
 
-var soma = 0
+var soma = 0;
 soma = numeros.reduce(function(soma,numero){
-    return soma+numero
-})
+    return soma+numero;
+});
+console.log(soma);
 
-console.log(soma)
+/*Usar reduce pra somar os nomes */
+
+
+var soma_nome = pessoas.reduce(function(soma2,pessoa){
+     soma2.push(pessoa.nome);
+     return soma2
+},[]);
+console.log(soma_nome);
