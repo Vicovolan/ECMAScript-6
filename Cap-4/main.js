@@ -29,20 +29,3 @@ while (!prox.done) {
 }
 
 
-//for in, for of
-var	linkedin	=	{
-    nome:	'Vitoria',
-    idade : 20
-}
-
-for(var perfil in linkedin){
-
-    var info = linkedin[perfil]
-    console.log(info)
-}
-
-var dados = [3,4,5,9,10,11,24]
-
-for(numeros of dados){
-    console.log(numeros)
-}
