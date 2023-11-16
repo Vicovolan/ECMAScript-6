@@ -32,3 +32,39 @@ for(var gato of gatos ){
     selecionar_cor(gato)
 }
 
+// map 
+
+var map = new Map()
+var objeto = {}
+function funcao(){}
+
+map.set("palavras", "sou uma string")
+map.set(funcao, "sou uma função")
+map.set(objeto, "sou um obj")
+
+console.log(map.get(funcao)+": ")
+console.log( map.size)
+console.log(map.has("abc")) //verificar se tem abc dentro do map
+
+console.log(map.has("palavras")) //true
+map.delete("palavras")
+console.log(map.has("palavras")) //false
+
+var	map	=	new	Map();
+map.set('um',	1);
+map.set('dois',	2);
+map.set('três',	3);
+for(var	chave	of	map.keys()){
+		console.log(chave);	//	um	dois	três
+}
+console.log( map.has("três"))
+console.log( map.has("quatro"))
+
+for (var value of map.values()){
+   
+  console.log(value)
+}
+
+for(var entrada of map.entries()){
+    console.log(entrada)
+}
