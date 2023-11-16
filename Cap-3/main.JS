@@ -108,7 +108,7 @@ console.log(soma);
 
 var soma_nome = pessoas.reduce(function(arraysoma2,pessoa){
      arraysoma2.push(pessoa.nome);
-     return soma2
+     return arraysoma2
 },[]); /*isso no fim é pra passar vazio [] como valor inicial*/
 console.log(soma_nome);
 
