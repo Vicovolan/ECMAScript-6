@@ -28,3 +28,4 @@ while (!prox.done) {
     selecionar_cor(cores[Math.floor(Math.random() * cores.length)]); //math.floor garante que  o n é arredondado p baixo
     prox = iterador.next();
 }
+
