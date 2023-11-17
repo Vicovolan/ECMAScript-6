@@ -74,3 +74,5 @@ if(musicas.has('myself')){
     console.log("já esta na lista")
 }
 
+var qnt = musicas.size
+console.log("Na playlista há " + qnt + " músicas")
