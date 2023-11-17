@@ -77,5 +77,22 @@ console.log(vitoria.getNome())// Imprime o nome da instância 'vitoria' usando o
 
 console.log(vitoria.nome) //undefined pq tenta acessar diretamente a propriedade "Nome" mas não permite
 
+//administrando uma biblioteca de livros 
 
+var estantes = new Map();
 
+for(var livro of livros){
+
+estantes.set(livro.getTitulo(), livro.getEstante())
+}
+
+//tela para localizar o livro
+
+function getLocalizacaoDoLivro(tituloDoLivro) {
+   
+    if (estantes.has(tituloDoLivro)) {
+        console.log(estantes.get(tituloDoLivro)); 
+    } else {
+        console.log("Livro não encontrado"); 
+    }
+}
