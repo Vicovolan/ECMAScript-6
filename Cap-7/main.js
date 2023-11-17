@@ -35,3 +35,15 @@ set.add(3)
 
 set.Mostrar()
 set.deletar(2)
+
+// usar o set e elimina umas linhas de código(esse set.add ta la em cima a function)
+
+var set = new Set()
+set.add(2)
+set.add(1)
+set.add(2)
+
+for(const valor of set){
+
+    console.log(valor)
+}
