@@ -76,3 +76,16 @@ if(musicas.has('myself')){
 
 var qnt = musicas.size
 console.log("Na playlista há " + qnt + " músicas")
+
+//weakset
+// só é possível add elementos, n é possivel usar o clear e n é iterável
+
+var musica1 = {
+    autor: 'JeM',
+    musica: "amor de conto"
+}
+
+var musicas = new WeakSet([musica1]);
+console.log(musicas)
+
+musica1 = null //weakset n retorna musica sem referencia
