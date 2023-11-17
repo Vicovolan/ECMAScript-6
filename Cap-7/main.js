@@ -62,5 +62,15 @@ for(const musica of musicas){
     console.log(musica)
 }
 
+var musicas = new Set(['me','myself','I'])
+musicas.clear( )
 
+for(const musica of musicas){
+    console.log(musica)
+}
+
+
+if(musicas.has('myself')){
+    console.log("já esta na lista")
+}
 
