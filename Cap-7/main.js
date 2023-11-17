@@ -47,3 +47,12 @@ for(const valor of set){
 
     console.log(valor)
 }
+//add musicas
+
+var musicas = new Set()
+musicas.add("just like u")
+
+for(const musica of musicas){
+    console.log(musica)
+}
+
