@@ -56,3 +56,11 @@ for(const musica of musicas){
     console.log(musica)
 }
 
+musicas.delete("just like u")
+
+for(const musica of musicas){
+    console.log(musica)
+}
+
+
+
