@@ -24,4 +24,6 @@ function parametrobrigatorio(parametro){
 }
 function tela(objeto = parametrobrigatorio('objeto')){
     //corpo do codigo
+
 }
+
