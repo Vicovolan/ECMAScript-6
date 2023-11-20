@@ -16,5 +16,12 @@ function	montaQuerySelect() {
     return	`SELECT	${cols}	from	${tabela}`;
 }
 
-//arguments nos concede o podemos de resgatar parametro da função 
+//arguments nos concede o podemos de resgatar parametro da função mesmo que n tenha sido declarado na assinatura
+//o operador rest nos permite colocar um numero indefinido de argumentos em uma array 
+function somar (...valor){
+    return valor.reduce((soma,valor) => {
+        return soma + valor
+    },0)
+}
 
+//codigo fica enxuto 
