@@ -58,3 +58,15 @@ class Sonix extends carro{
 }
 //agr sim
 console.log(sonata.modelo) //Sonix
+//metodo estatico, pode ser invocado sem que seja instanciado um novo objeto da classe. Usa static
+class Casa{
+    static abrirPorta(){
+        console.log("Portas abrindo")
+    }
+}
+
+abrirPorta() //por ser estatico, só isso já chama, n precisa do new..pra afzer outro obj
+//se remover o static, vai dar erro falando que abrirPorta is not a function
+
+
+
